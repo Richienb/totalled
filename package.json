@@ -1,6 +1,6 @@
 {
 	"name": "totalled",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Get the sum of all the values in an array.",
 	"repository": "https://github.com/Richienb/totalled.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
