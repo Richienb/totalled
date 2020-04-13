@@ -1,9 +1,9 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-	if (typeof input !== "string") {
-		throw new TypeError(`Expected a string, got ${typeof input}`)
+module.exports = array => {
+	if (!Array.isArray(array)) {
+		throw new TypeError("An array of numbers must be provided!")
 	}
 
-	return `${input} & ${postfix}`
+	return array.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
 }

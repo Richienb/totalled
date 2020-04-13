@@ -1,15 +1,14 @@
 /**
-My awesome module.
-@param input Lorem ipsum.
-@param postfix Lorem ipsum.
+Get the sum of all the values in an array.
+@param array The array to sum.
 @example
 ```
-const theModule = require("the-module");
+const totalled = require("totalled");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+totalled([1, 2, 3]);
+//=> 6
 ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string
+declare function totalled(array: number[]): number
 
-export = theModule
+export = totalled

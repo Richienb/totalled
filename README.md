@@ -1,41 +1,30 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# totalled [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/totalled/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/totalled)
 
-My awesome module.
+Get the sum of all the values in an array.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/totalled.png)](https://npmjs.com/package/totalled)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install totalled
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const totalled = require("totalled");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+totalled([1, 2, 3]);
+//=> 6
 ```
 
 ## API
 
-### theModule(input, options?)
+### totalled(array)
 
-#### input
+#### array
 
-Type: `string`
+Type: `array<number>`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The array to sum.
